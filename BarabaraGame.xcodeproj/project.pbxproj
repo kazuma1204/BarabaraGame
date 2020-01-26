@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6417CD9723DC4BBE0038AD28 /* bgm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6417CD9623DC4BBE0038AD28 /* bgm.mp3 */; };
+		6417CD9923DD29710038AD28 /* BGM2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6417CD9823DD29710038AD28 /* BGM2.mp3 */; };
+		6417CD9B23DD6DAC0038AD28 /* BGM3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6417CD9A23DD6DAC0038AD28 /* BGM3.mp3 */; };
 		644F6DDD23B33160002E2FC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644F6DDC23B33160002E2FC3 /* AppDelegate.swift */; };
 		644F6DDF23B33160002E2FC3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644F6DDE23B33160002E2FC3 /* SceneDelegate.swift */; };
 		644F6DE123B33160002E2FC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644F6DE023B33160002E2FC3 /* ViewController.swift */; };
@@ -15,6 +18,10 @@
 		644F6DE923B33165002E2FC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 644F6DE723B33165002E2FC3 /* LaunchScreen.storyboard */; };
 		644F6DF423B33165002E2FC3 /* BarabaraGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644F6DF323B33165002E2FC3 /* BarabaraGameTests.swift */; };
 		644F6DFF23B33165002E2FC3 /* BarabaraGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644F6DFE23B33165002E2FC3 /* BarabaraGameUITests.swift */; };
+		644F6E0D23B33AAC002E2FC3 /* bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 644F6E0C23B33AAC002E2FC3 /* bar.png */; };
+		644F6E0F23B33AB7002E2FC3 /* tail.png in Resources */ = {isa = PBXBuildFile; fileRef = 644F6E0E23B33AB7002E2FC3 /* tail.png */; };
+		644F6E1123B34418002E2FC3 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644F6E1023B34418002E2FC3 /* GameViewController.swift */; };
+		644F6E1323B34432002E2FC3 /* RnkingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644F6E1223B34432002E2FC3 /* RnkingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6417CD9623DC4BBE0038AD28 /* bgm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgm.mp3; sourceTree = "<group>"; };
+		6417CD9823DD29710038AD28 /* BGM2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BGM2.mp3; sourceTree = "<group>"; };
+		6417CD9A23DD6DAC0038AD28 /* BGM3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BGM3.mp3; sourceTree = "<group>"; };
 		644F6DD923B33160002E2FC3 /* BarabaraGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarabaraGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		644F6DDC23B33160002E2FC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		644F6DDE23B33160002E2FC3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +59,10 @@
 		644F6DFA23B33165002E2FC3 /* BarabaraGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarabaraGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		644F6DFE23B33165002E2FC3 /* BarabaraGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarabaraGameUITests.swift; sourceTree = "<group>"; };
 		644F6E0023B33165002E2FC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		644F6E0C23B33AAC002E2FC3 /* bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bar.png; sourceTree = "<group>"; };
+		644F6E0E23B33AB7002E2FC3 /* tail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tail.png; sourceTree = "<group>"; };
+		644F6E1023B34418002E2FC3 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		644F6E1223B34432002E2FC3 /* RnkingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RnkingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +113,17 @@
 		644F6DDB23B33160002E2FC3 /* BarabaraGame */ = {
 			isa = PBXGroup;
 			children = (
+				6417CD9623DC4BBE0038AD28 /* bgm.mp3 */,
+				6417CD9823DD29710038AD28 /* BGM2.mp3 */,
+				6417CD9A23DD6DAC0038AD28 /* BGM3.mp3 */,
+				644F6E0E23B33AB7002E2FC3 /* tail.png */,
+				644F6E0C23B33AAC002E2FC3 /* bar.png */,
+				644F6DE223B33160002E2FC3 /* Main.storyboard */,
+				644F6DE023B33160002E2FC3 /* ViewController.swift */,
+				644F6E1023B34418002E2FC3 /* GameViewController.swift */,
+				644F6E1223B34432002E2FC3 /* RnkingViewController.swift */,
 				644F6DDC23B33160002E2FC3 /* AppDelegate.swift */,
 				644F6DDE23B33160002E2FC3 /* SceneDelegate.swift */,
-				644F6DE023B33160002E2FC3 /* ViewController.swift */,
-				644F6DE223B33160002E2FC3 /* Main.storyboard */,
 				644F6DE523B33165002E2FC3 /* Assets.xcassets */,
 				644F6DE723B33165002E2FC3 /* LaunchScreen.storyboard */,
 				644F6DEA23B33165002E2FC3 /* Info.plist */,
@@ -233,8 +254,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				644F6DE923B33165002E2FC3 /* LaunchScreen.storyboard in Resources */,
+				6417CD9923DD29710038AD28 /* BGM2.mp3 in Resources */,
+				644F6E0F23B33AB7002E2FC3 /* tail.png in Resources */,
 				644F6DE623B33165002E2FC3 /* Assets.xcassets in Resources */,
 				644F6DE423B33160002E2FC3 /* Main.storyboard in Resources */,
+				6417CD9723DC4BBE0038AD28 /* bgm.mp3 in Resources */,
+				6417CD9B23DD6DAC0038AD28 /* BGM3.mp3 in Resources */,
+				644F6E0D23B33AAC002E2FC3 /* bar.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +285,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				644F6E1123B34418002E2FC3 /* GameViewController.swift in Sources */,
 				644F6DE123B33160002E2FC3 /* ViewController.swift in Sources */,
+				644F6E1323B34432002E2FC3 /* RnkingViewController.swift in Sources */,
 				644F6DDD23B33160002E2FC3 /* AppDelegate.swift in Sources */,
 				644F6DDF23B33160002E2FC3 /* SceneDelegate.swift in Sources */,
 			);
