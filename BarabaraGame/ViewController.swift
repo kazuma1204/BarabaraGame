@@ -22,7 +22,6 @@ class ViewController: UIViewController,UITextFieldDelegate, AVAudioPlayerDelegat
     @IBOutlet var start2: UIButton!
     @IBOutlet var ranking: UIButton!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -75,16 +74,14 @@ class ViewController: UIViewController,UITextFieldDelegate, AVAudioPlayerDelegat
         playBGM(name: "bgm")
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-    }
+   
     
     func playBGM(name: String) {
         guard let path = Bundle.main.path(forResource: name, ofType: "mp3") else {
             return
         }
         do {
-            
+            audioPlayer.stop()
             audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: path))
             
             

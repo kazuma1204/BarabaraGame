@@ -19,13 +19,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="全ての棒を真ん中で揃えろ！！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7L-ym-Rk4">
-                                        <rect key="frame" x="40" y="148" width="295" height="61"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                        <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UMF-D2-Pcl">
                                         <rect key="frame" x="25" y="328" width="324" height="313"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -60,11 +53,11 @@
                                         <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </view>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7KV-Zh-Cbv">
-                                        <rect key="frame" x="25" y="53" width="324" height="87"/>
+                                        <rect key="frame" x="0.0" y="53" width="375" height="87"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="バラバラゲーム" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NbG-yh-18Q">
-                                                <rect key="frame" x="52" y="11" width="221" height="68"/>
+                                                <rect key="frame" x="77" y="9" width="221" height="68"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -94,6 +87,13 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                     </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="全ての棒を画面の中心で揃えろ！！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7L-ym-Rk4">
+                                        <rect key="frame" x="40" y="160" width="294" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.74677745580882049" green="1" blue="0.08355496889831493" alpha="0.32204555457746481" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
@@ -114,7 +114,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="390.85457271364322"/>
+            <point key="canvasLocation" x="40.799999999999997" y="469.1154422788606"/>
         </scene>
         <!--Rnking View Controller-->
         <scene sceneID="fON-mt-7L7">
@@ -277,7 +277,7 @@
                                     <color key="titleShadowColor" red="0.74910616779999994" green="1" blue="0.89339347339999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="sQb-tk-9Fr" kind="presentation" id="FMe-w9-lEW"/>
+                                    <segue destination="sQb-tk-9Fr" kind="presentation" identifier="idou2" id="FMe-w9-lEW"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -366,7 +366,7 @@
                                         <state key="normal" title="ランキングを見る"/>
                                         <connections>
                                             <action selector="toRankingButton" destination="sQb-tk-9Fr" eventType="touchUpInside" id="Bac-0o-L0j"/>
-                                            <segue destination="pVP-Eo-pAm" kind="presentation" id="Zvt-UR-zyg"/>
+                                            <segue destination="pVP-Eo-pAm" kind="presentation" identifier="idou3" id="Zvt-UR-zyg"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hV4-F8-epX">
@@ -407,7 +407,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ujd-zQ-FsW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1037.5999999999999" y="50.824587706146929"/>
+            <point key="canvasLocation" x="1038" y="25"/>
         </scene>
     </scenes>
     <resources>

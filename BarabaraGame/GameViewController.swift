@@ -33,7 +33,6 @@ class GameViewController: UIViewController,AVAudioPlayerDelegate {
     
     var name: String = ""
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         positionX = [width/2, width/2, width/2] //画像􏰀位置を画面幅􏰀中心にする
@@ -193,7 +192,7 @@ class GameViewController: UIViewController,AVAudioPlayerDelegate {
             return
         }
         do {
-            
+            audioPlayer.stop()
             audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: path))
             
             audioPlayer.delegate = self
@@ -203,6 +202,12 @@ class GameViewController: UIViewController,AVAudioPlayerDelegate {
         }
     }
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+           if segue.identifier == "idou3" {
+               audioPlayer.stop()
+           }
+       }
     /*
      // MARK: - Navigation
      
@@ -213,4 +218,8 @@ class GameViewController: UIViewController,AVAudioPlayerDelegate {
      }
      */
     
+    
+    //ランキングをオンライン
+    //リトライとストップを同じ画面に
+    //ランキング画面から遊ぶ画面に移動する際に名前が決められていない時にアラートを出す！
 }

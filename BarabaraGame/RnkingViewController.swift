@@ -83,7 +83,7 @@ class RnkingViewController: UIViewController, AVAudioPlayerDelegate {
                return
            }
            do {
-               
+               audioPlayer.stop()
                audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: path))
                
                audioPlayer.delegate = self
@@ -91,6 +91,17 @@ class RnkingViewController: UIViewController, AVAudioPlayerDelegate {
                audioPlayer.play()
            } catch {
            }
+       }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "idou2" {
+            audioPlayer.stop()
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+           super.viewWillAppear(animated)
+           playBGM(name: "BGM3")
        }
     
     /*
