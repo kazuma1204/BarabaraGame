@@ -25,7 +25,7 @@ class GameViewController: UIViewController,AVAudioPlayerDelegate {
     
     
     var timer: Timer!
-    var score: Float = 1000.0
+    var score: Int = 10000
     let defaults: UserDefaults = UserDefaults.standard
     
     let width: CGFloat = UIScreen.main.bounds.size.width
@@ -69,16 +69,16 @@ class GameViewController: UIViewController,AVAudioPlayerDelegate {
             if timer.isValid == true {
                 timer.invalidate() //タイマーを止める(無効にする)
                 for i in 0..<3 {
-                    score = score - abs(Float(width/2 - positionX[i]))*2 //スコア􏰀計算をする
+                    score = score - abs(Int(width/2 - positionX[i]))*2 //スコア􏰀計算をする
                 }
                 resultLabel.text = "Score : " + String(score)
                 resultLabel.isHidden = false
                 
-                let highScore1: Float = Float(defaults.integer(forKey: "score1"))
-                let highScore2: Float = Float(defaults.integer(forKey: "score2"))
-                let highScore3: Float = Float(defaults.integer(forKey: "score3"))
-                let highScore4: Float = Float(defaults.integer(forKey: "score4"))
-                let highScore5: Float = Float(defaults.integer(forKey: "score5"))
+                let highScore1: Int = defaults.integer(forKey: "score1")
+                let highScore2: Int = defaults.integer(forKey: "score2")
+                let highScore3: Int = defaults.integer(forKey: "score3")
+                let highScore4: Int = defaults.integer(forKey: "score4")
+                let highScore5: Int = defaults.integer(forKey: "score5")
                 
                 let name1: String!
                 if defaults.string(forKey: "name1") != nil{
