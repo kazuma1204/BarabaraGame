@@ -25,7 +25,7 @@ class GameViewController: UIViewController,AVAudioPlayerDelegate {
     
     
     var timer: Timer!
-    var score: Int = 10000
+    var score: Int = 1000
     let defaults: UserDefaults = UserDefaults.standard
     
     let width: CGFloat = UIScreen.main.bounds.size.width
@@ -71,7 +71,7 @@ class GameViewController: UIViewController,AVAudioPlayerDelegate {
                 for i in 0..<3 {
                     score = score - abs(Int(width/2 - positionX[i]))*2 //スコア􏰀計算をする
                 }
-                resultLabel.text = "Score : " + String(score)
+                resultLabel.text = "スコア : " + String(score)
                 resultLabel.isHidden = false
                 
                 let highScore1: Int = defaults.integer(forKey: "score1")
