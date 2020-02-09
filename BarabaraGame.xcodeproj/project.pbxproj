@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5ED20B0D244710B105E89DF0 /* Pods_BarabaraGame_BarabaraGameUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EDA38D29DC804629B37A22C /* Pods_BarabaraGame_BarabaraGameUITests.framework */; };
+		640063B623EFCCFF00E0145D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 640063B523EFCCFF00E0145D /* GoogleService-Info.plist */; };
 		6417CD9723DC4BBE0038AD28 /* bgm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6417CD9623DC4BBE0038AD28 /* bgm.mp3 */; };
 		6417CD9923DD29710038AD28 /* BGM2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6417CD9823DD29710038AD28 /* BGM2.mp3 */; };
 		6417CD9B23DD6DAC0038AD28 /* BGM3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6417CD9A23DD6DAC0038AD28 /* BGM3.mp3 */; };
@@ -22,6 +24,8 @@
 		644F6E0F23B33AB7002E2FC3 /* tail.png in Resources */ = {isa = PBXBuildFile; fileRef = 644F6E0E23B33AB7002E2FC3 /* tail.png */; };
 		644F6E1123B34418002E2FC3 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644F6E1023B34418002E2FC3 /* GameViewController.swift */; };
 		644F6E1323B34432002E2FC3 /* RnkingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644F6E1223B34432002E2FC3 /* RnkingViewController.swift */; };
+		652D354E748FD865CC25DC62 /* Pods_BarabaraGameTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 123EAD05BBE0444C3D5CB885 /* Pods_BarabaraGameTests.framework */; };
+		A1C296961010E3A602D939F1 /* Pods_BarabaraGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA42DF2CEB4B0A7C85D9AEF9 /* Pods_BarabaraGame.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +46,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		123EAD05BBE0444C3D5CB885 /* Pods_BarabaraGameTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BarabaraGameTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B16A7E1BE898EB99959F823 /* Pods-BarabaraGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarabaraGame.debug.xcconfig"; path = "Target Support Files/Pods-BarabaraGame/Pods-BarabaraGame.debug.xcconfig"; sourceTree = "<group>"; };
+		2088643E55CDD111C23F3F4C /* Pods-BarabaraGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarabaraGame.release.xcconfig"; path = "Target Support Files/Pods-BarabaraGame/Pods-BarabaraGame.release.xcconfig"; sourceTree = "<group>"; };
+		20D74AEAF54DBF70B8FDCF52 /* Pods-BarabaraGame-BarabaraGameUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarabaraGame-BarabaraGameUITests.release.xcconfig"; path = "Target Support Files/Pods-BarabaraGame-BarabaraGameUITests/Pods-BarabaraGame-BarabaraGameUITests.release.xcconfig"; sourceTree = "<group>"; };
+		531E4385D109CE4343E4F954 /* Pods-BarabaraGameTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarabaraGameTests.release.xcconfig"; path = "Target Support Files/Pods-BarabaraGameTests/Pods-BarabaraGameTests.release.xcconfig"; sourceTree = "<group>"; };
+		5EDA38D29DC804629B37A22C /* Pods_BarabaraGame_BarabaraGameUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BarabaraGame_BarabaraGameUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		640063B523EFCCFF00E0145D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6417CD9623DC4BBE0038AD28 /* bgm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgm.mp3; sourceTree = "<group>"; };
 		6417CD9823DD29710038AD28 /* BGM2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BGM2.mp3; sourceTree = "<group>"; };
 		6417CD9A23DD6DAC0038AD28 /* BGM3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BGM3.mp3; sourceTree = "<group>"; };
@@ -63,6 +74,9 @@
 		644F6E0E23B33AB7002E2FC3 /* tail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tail.png; sourceTree = "<group>"; };
 		644F6E1023B34418002E2FC3 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		644F6E1223B34432002E2FC3 /* RnkingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RnkingViewController.swift; sourceTree = "<group>"; };
+		81E8C84EE66697ED953F40F6 /* Pods-BarabaraGameTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarabaraGameTests.debug.xcconfig"; path = "Target Support Files/Pods-BarabaraGameTests/Pods-BarabaraGameTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BA42DF2CEB4B0A7C85D9AEF9 /* Pods_BarabaraGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BarabaraGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0355675D73D0917B062E36A /* Pods-BarabaraGame-BarabaraGameUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarabaraGame-BarabaraGameUITests.debug.xcconfig"; path = "Target Support Files/Pods-BarabaraGame-BarabaraGameUITests/Pods-BarabaraGame-BarabaraGameUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1C296961010E3A602D939F1 /* Pods_BarabaraGame.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				652D354E748FD865CC25DC62 /* Pods_BarabaraGameTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,12 +100,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ED20B0D244710B105E89DF0 /* Pods_BarabaraGame_BarabaraGameUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E03DFD8BA7D6EE35DF8B38D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA42DF2CEB4B0A7C85D9AEF9 /* Pods_BarabaraGame.framework */,
+				5EDA38D29DC804629B37A22C /* Pods_BarabaraGame_BarabaraGameUITests.framework */,
+				123EAD05BBE0444C3D5CB885 /* Pods_BarabaraGameTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		644F6DD023B33160002E2FC3 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +124,8 @@
 				644F6DF223B33165002E2FC3 /* BarabaraGameTests */,
 				644F6DFD23B33165002E2FC3 /* BarabaraGameUITests */,
 				644F6DDA23B33160002E2FC3 /* Products */,
+				84D6629ECB4ADE907D91A410 /* Pods */,
+				3E03DFD8BA7D6EE35DF8B38D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +155,7 @@
 				644F6DDE23B33160002E2FC3 /* SceneDelegate.swift */,
 				644F6DE523B33165002E2FC3 /* Assets.xcassets */,
 				644F6DE723B33165002E2FC3 /* LaunchScreen.storyboard */,
+				640063B523EFCCFF00E0145D /* GoogleService-Info.plist */,
 				644F6DEA23B33165002E2FC3 /* Info.plist */,
 			);
 			path = BarabaraGame;
@@ -149,6 +179,19 @@
 			path = BarabaraGameUITests;
 			sourceTree = "<group>";
 		};
+		84D6629ECB4ADE907D91A410 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B16A7E1BE898EB99959F823 /* Pods-BarabaraGame.debug.xcconfig */,
+				2088643E55CDD111C23F3F4C /* Pods-BarabaraGame.release.xcconfig */,
+				C0355675D73D0917B062E36A /* Pods-BarabaraGame-BarabaraGameUITests.debug.xcconfig */,
+				20D74AEAF54DBF70B8FDCF52 /* Pods-BarabaraGame-BarabaraGameUITests.release.xcconfig */,
+				81E8C84EE66697ED953F40F6 /* Pods-BarabaraGameTests.debug.xcconfig */,
+				531E4385D109CE4343E4F954 /* Pods-BarabaraGameTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -156,9 +199,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 644F6E0323B33165002E2FC3 /* Build configuration list for PBXNativeTarget "BarabaraGame" */;
 			buildPhases = (
+				607F8D12EDC32ADA9F841A56 /* [CP] Check Pods Manifest.lock */,
 				644F6DD523B33160002E2FC3 /* Sources */,
 				644F6DD623B33160002E2FC3 /* Frameworks */,
 				644F6DD723B33160002E2FC3 /* Resources */,
+				3A056C042C50E61B7BBB6224 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -173,6 +218,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 644F6E0623B33165002E2FC3 /* Build configuration list for PBXNativeTarget "BarabaraGameTests" */;
 			buildPhases = (
+				FC24CC6E748283A6AB7FBA0C /* [CP] Check Pods Manifest.lock */,
 				644F6DEB23B33165002E2FC3 /* Sources */,
 				644F6DEC23B33165002E2FC3 /* Frameworks */,
 				644F6DED23B33165002E2FC3 /* Resources */,
@@ -191,9 +237,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 644F6E0923B33165002E2FC3 /* Build configuration list for PBXNativeTarget "BarabaraGameUITests" */;
 			buildPhases = (
+				DFCB522264743162FBBE242C /* [CP] Check Pods Manifest.lock */,
 				644F6DF623B33165002E2FC3 /* Sources */,
 				644F6DF723B33165002E2FC3 /* Frameworks */,
 				644F6DF823B33165002E2FC3 /* Resources */,
+				AFCFFEB39085E9A36C8366AC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -255,6 +303,7 @@
 			files = (
 				644F6DE923B33165002E2FC3 /* LaunchScreen.storyboard in Resources */,
 				6417CD9923DD29710038AD28 /* BGM2.mp3 in Resources */,
+				640063B623EFCCFF00E0145D /* GoogleService-Info.plist in Resources */,
 				644F6E0F23B33AB7002E2FC3 /* tail.png in Resources */,
 				644F6DE623B33165002E2FC3 /* Assets.xcassets in Resources */,
 				644F6DE423B33160002E2FC3 /* Main.storyboard in Resources */,
@@ -279,6 +328,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A056C042C50E61B7BBB6224 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BarabaraGame/Pods-BarabaraGame-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BarabaraGame/Pods-BarabaraGame-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BarabaraGame/Pods-BarabaraGame-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		607F8D12EDC32ADA9F841A56 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BarabaraGame-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFCFFEB39085E9A36C8366AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BarabaraGame-BarabaraGameUITests/Pods-BarabaraGame-BarabaraGameUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BarabaraGame-BarabaraGameUITests/Pods-BarabaraGame-BarabaraGameUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BarabaraGame-BarabaraGameUITests/Pods-BarabaraGame-BarabaraGameUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFCB522264743162FBBE242C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BarabaraGame-BarabaraGameUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC24CC6E748283A6AB7FBA0C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BarabaraGameTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		644F6DD523B33160002E2FC3 /* Sources */ = {
@@ -397,7 +549,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -460,6 +612,7 @@
 		};
 		644F6E0423B33165002E2FC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B16A7E1BE898EB99959F823 /* Pods-BarabaraGame.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -477,6 +630,7 @@
 		};
 		644F6E0523B33165002E2FC3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2088643E55CDD111C23F3F4C /* Pods-BarabaraGame.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -494,6 +648,7 @@
 		};
 		644F6E0723B33165002E2FC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81E8C84EE66697ED953F40F6 /* Pods-BarabaraGameTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +670,7 @@
 		};
 		644F6E0823B33165002E2FC3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 531E4385D109CE4343E4F954 /* Pods-BarabaraGameTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -536,6 +692,7 @@
 		};
 		644F6E0A23B33165002E2FC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0355675D73D0917B062E36A /* Pods-BarabaraGame-BarabaraGameUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -555,6 +712,7 @@
 		};
 		644F6E0B23B33165002E2FC3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20D74AEAF54DBF70B8FDCF52 /* Pods-BarabaraGame-BarabaraGameUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

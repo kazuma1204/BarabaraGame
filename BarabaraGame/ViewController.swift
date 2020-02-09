@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import Firebase
 
 class ViewController: UIViewController,UITextFieldDelegate, AVAudioPlayerDelegate {
     
@@ -43,9 +44,9 @@ class ViewController: UIViewController,UITextFieldDelegate, AVAudioPlayerDelegat
     
     @IBAction func start() {
         if nameTextField.text == "" {
-            let alert: UIAlertController = UIAlertController (title: "ちょい待ち!!", message: "名前を入力してね！",preferredStyle: .alert)
+            let alert: UIAlertController = UIAlertController (title: "名前を入力してね!", message: "",preferredStyle: .alert)
             
-            alert.addAction(UIAlertAction(title: "OK!",style: .cancel, handler: { action in }))
+            alert.addAction(UIAlertAction(title: "OK",style: .cancel, handler: { action in }))
             
             present(alert, animated: true, completion: nil)
             
@@ -93,7 +94,3 @@ class ViewController: UIViewController,UITextFieldDelegate, AVAudioPlayerDelegat
     }
     
 }
-//ランキングのオンライン表示にする
-//ランキングペーじのランキングを丸くする
-//ランキングページからバラバラ画面に移行する際に名前を入れろというアラートを追加
-//ランキングページからバラバラ画面に移動する際に音楽を閉じる

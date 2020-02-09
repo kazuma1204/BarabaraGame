@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import Firebase
 
 class GameViewController: UIViewController,AVAudioPlayerDelegate {
     
@@ -18,13 +19,13 @@ class GameViewController: UIViewController,AVAudioPlayerDelegate {
     @IBOutlet var imgView3: UIImageView!
     @IBOutlet var resultLabel: UILabel!
     @IBOutlet var toTop: UIButton!
-    @IBOutlet var stop2: UIButton!
+    @IBOutlet var stopButton: UIButton!
     @IBOutlet var restart: UIButton!
     @IBOutlet var view2: UIView!
     
     
     var timer: Timer!
-    var score: Int = 1000
+    var score: Float = 1000.0
     let defaults: UserDefaults = UserDefaults.standard
     
     let width: CGFloat = UIScreen.main.bounds.size.width
@@ -33,15 +34,16 @@ class GameViewController: UIViewController,AVAudioPlayerDelegate {
     
     var name: String = ""
     
+    var checked: Bool = true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         positionX = [width/2, width/2, width/2] //画像􏰀位置を画面幅􏰀中心にする
         self.start()
         
-        stop2.layer.cornerRadius = 45
-        restart.layer.cornerRadius = 45
-        toTop.layer.cornerRadius = 10
-        view2.layer.cornerRadius = 20
+        stopButton.layer.cornerRadius = 85
+        toTop.layer.cornerRadius = 5
+        view2.layer.cornerRadius = 10
         // Do any additional setup after loading the view.
     }
     
@@ -63,104 +65,115 @@ class GameViewController: UIViewController,AVAudioPlayerDelegate {
     }
     
     @IBAction func stop() {
-        if timer.isValid == true {
-            timer.invalidate() //タイマーを止める(無効にする)
-            for i in 0..<3 {
-                score = score - abs(Int(width/2 - positionX[i]))*2 //スコア􏰀計算をする
+        if checked == true {
+            if timer.isValid == true {
+                timer.invalidate() //タイマーを止める(無効にする)
+                for i in 0..<3 {
+                    score = score - abs(Float(width/2 - positionX[i]))*2 //スコア􏰀計算をする
+                }
+                resultLabel.text = "Score : " + String(score)
+                resultLabel.isHidden = false
+                
+                let highScore1: Float = Float(defaults.integer(forKey: "score1"))
+                let highScore2: Float = Float(defaults.integer(forKey: "score2"))
+                let highScore3: Float = Float(defaults.integer(forKey: "score3"))
+                let highScore4: Float = Float(defaults.integer(forKey: "score4"))
+                let highScore5: Float = Float(defaults.integer(forKey: "score5"))
+                
+                let name1: String!
+                if defaults.string(forKey: "name1") != nil{
+                    name1 = defaults.string(forKey: "name1")
+                }else{
+                    name1 = ""
+                }
+                
+                let name2: String!
+                if defaults.string(forKey: "name2") != nil{
+                    name2 = defaults.string(forKey: "name2")
+                }else{
+                    name2 = ""
+                }
+                
+                let name3: String!
+                if defaults.string(forKey: "name3") != nil{
+                    name3 = defaults.string(forKey: "name3")
+                }else{
+                    name3 = ""
+                }
+                
+                let name4: String!
+                if defaults.string(forKey: "name4") != nil{
+                    name4 = defaults.string(forKey: "name4")
+                }else{
+                    name4 = ""
+                }
+                
+                let name5: String!
+                if defaults.string(forKey: "name5") != nil{
+                    name5 = defaults.string(forKey: "name5")
+                }else{
+                    name5 = ""
+                }
+                           
+                           
+                
+                if score > highScore1 {
+                    defaults.set(score, forKey: "score1")
+                    defaults.set(highScore1, forKey: "score2")
+                    defaults.set(highScore2, forKey: "score3")
+                    defaults.set(highScore3, forKey: "score4")
+                    defaults.set(highScore4, forKey: "score5")
+                    defaults.set(name, forKey: "name1")
+                    defaults.set(name1, forKey: "name2")
+                    defaults.set(name2, forKey: "name3")
+                    defaults.set(name3, forKey: "name4")
+                    defaults.set(name4, forKey: "name5")
+                    
+                    
+                    
+                }else if score > highScore2 {
+                    defaults.set(score, forKey: "score2")
+                    defaults.set(highScore2, forKey: "score3")
+                    defaults.set(highScore3, forKey: "score4")
+                    defaults.set(highScore4, forKey: "score5")
+                    defaults.set(name, forKey: "name2")
+                    defaults.set(name2, forKey: "name3")
+                    defaults.set(name3, forKey: "name4")
+                    defaults.set(name4, forKey: "name5")
+                    
+                    
+                }else if score > highScore3 {
+                    defaults.set(score, forKey: "score3")
+                    defaults.set(highScore3, forKey: "score4")
+                    defaults.set(highScore4, forKey: "score5")
+                    defaults.set(name, forKey: "name3")
+                    defaults.set(name3, forKey: "name4")
+                    defaults.set(name4, forKey: "name5")
+                    
+                    
+                }else if score > highScore4 {
+                    defaults.set(score, forKey: "score4")
+                    defaults.set(highScore4, forKey: "score5")
+                    defaults.set(name, forKey: "name4")
+                    defaults.set(name4, forKey: "name5")
+                }else if score > highScore5 {
+                     defaults.set(score, forKey: "score5")
+                    defaults.set(name, forKey: "name5")
+                }
+                    
+                defaults.synchronize()
+                    
+                    
             }
-            resultLabel.text = "Score : " + String(score)
-            resultLabel.isHidden = false
-            
-            let highScore1: Int = defaults.integer(forKey: "score1")
-            let highScore2: Int = defaults.integer(forKey: "score2")
-            let highScore3: Int = defaults.integer(forKey: "score3")
-            let highScore4: Int = defaults.integer(forKey: "score4")
-            let highScore5: Int = defaults.integer(forKey: "score5")
-            
-            let name1: String!
-            if defaults.string(forKey: "name1") != nil{
-                name1 = defaults.string(forKey: "name1")
-            }else{
-                name1 = ""
+            checked = false
+            stopButton.setTitle("リトライ", for: .normal)
+        } else {
+            score = 1000 //スコア􏰀値をリセットする
+            if timer.isValid == false {
+                self.start()
             }
-            
-            let name2: String!
-            if defaults.string(forKey: "name2") != nil{
-                name2 = defaults.string(forKey: "name2")
-            }else{
-                name2 = ""
-            }
-            
-            let name3: String!
-            if defaults.string(forKey: "name3") != nil{
-                name3 = defaults.string(forKey: "name3")
-            }else{
-                name3 = ""
-            }
-            
-            let name4: String!
-            if defaults.string(forKey: "name4") != nil{
-                name4 = defaults.string(forKey: "name4")
-            }else{
-                name4 = ""
-            }
-            
-            let name5: String!
-            if defaults.string(forKey: "name5") != nil{
-                name5 = defaults.string(forKey: "name5")
-            }else{
-                name5 = ""
-            }
-                       
-                       
-            
-            if score > highScore1 {
-                defaults.set(score, forKey: "score1")
-                defaults.set(highScore1, forKey: "score2")
-                defaults.set(highScore2, forKey: "score3")
-                defaults.set(highScore3, forKey: "score4")
-                defaults.set(highScore4, forKey: "score5")
-                defaults.set(name, forKey: "name1")
-                defaults.set(name1, forKey: "name2")
-                defaults.set(name2, forKey: "name3")
-                defaults.set(name3, forKey: "name4")
-                defaults.set(name4, forKey: "name5")
-                
-                
-                
-            }else if score > highScore2 {
-                defaults.set(score, forKey: "score2")
-                defaults.set(highScore2, forKey: "score3")
-                defaults.set(highScore3, forKey: "score4")
-                defaults.set(highScore4, forKey: "score5")
-                defaults.set(name, forKey: "name2")
-                defaults.set(name2, forKey: "name3")
-                defaults.set(name3, forKey: "name4")
-                defaults.set(name4, forKey: "name5")
-                
-                
-            }else if score > highScore3 {
-                defaults.set(score, forKey: "score3")
-                defaults.set(highScore3, forKey: "score4")
-                defaults.set(highScore4, forKey: "score5")
-                defaults.set(name, forKey: "name3")
-                defaults.set(name3, forKey: "name4")
-                defaults.set(name4, forKey: "name5")
-                
-                
-            }else if score > highScore4 {
-                defaults.set(score, forKey: "score4")
-                defaults.set(highScore4, forKey: "score5")
-                defaults.set(name, forKey: "name4")
-                defaults.set(name4, forKey: "name5")
-            }else if score > highScore5 {
-                 defaults.set(score, forKey: "score5")
-                defaults.set(name, forKey: "name5")
-            }
-                
-            defaults.synchronize()
-                
-                
+            checked = true
+            stopButton.setTitle("STOP", for: .normal)
         }
         
     }
@@ -173,14 +186,7 @@ class GameViewController: UIViewController,AVAudioPlayerDelegate {
            super.viewWillAppear(animated)
            playBGM(name: "BGM2")
        }
-       
     
-    @IBAction func retry() {
-        score = 1000 //スコア􏰀値をリセットする
-        positionX = [width/2, width/2, width/2]
-        if timer.isValid == false {
-            self.start()
-        }}
     
     @IBAction func toTop3() {
         audioPlayer.stop()
@@ -201,13 +207,6 @@ class GameViewController: UIViewController,AVAudioPlayerDelegate {
         } catch {
         }
     }
-    
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-           if segue.identifier == "idou3" {
-               audioPlayer.stop()
-           }
-       }
     /*
      // MARK: - Navigation
      
@@ -218,8 +217,9 @@ class GameViewController: UIViewController,AVAudioPlayerDelegate {
      }
      */
     
-    
+    //デペロッパー登録
     //ランキングをオンライン
-    //リトライとストップを同じ画面に
-    //ランキング画面から遊ぶ画面に移動する際に名前が決められていない時にアラートを出す！
+    //スコアをもっと細かく出す
+    //ランキング画面でボタンが丸角にならないバグ(？)修正
+    
 }

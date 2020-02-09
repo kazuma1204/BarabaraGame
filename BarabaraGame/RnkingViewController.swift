@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import Firebase
 
 class RnkingViewController: UIViewController, AVAudioPlayerDelegate {
     
@@ -25,8 +26,7 @@ class RnkingViewController: UIViewController, AVAudioPlayerDelegate {
     @IBOutlet var nameLabel5: UILabel!
     @IBOutlet var ranking: UILabel!
     @IBOutlet var toTop: UIButton!
-    @IBOutlet var playgame: UIButton!
-    @IBOutlet var View4: UIButton!
+    @IBOutlet var View4: UIView!
     
     let defaults: UserDefaults = UserDefaults.standard
     
@@ -34,8 +34,9 @@ class RnkingViewController: UIViewController, AVAudioPlayerDelegate {
         super.viewDidLoad()
         
         ranking.layer.cornerRadius = 15
-        toTop.layer.cornerRadius = 60
-        playgame.layer.cornerRadius = 60
+        toTop.layer.cornerRadius = 10
+        View4.layer.cornerRadius = 20
+        rankingLabel1.layer.cornerRadius = 10
         
         rankingLabel1.text = String(defaults.integer(forKey: "score1"))
         rankingLabel2.text = String(defaults.integer(forKey: "score2"))
@@ -93,11 +94,6 @@ class RnkingViewController: UIViewController, AVAudioPlayerDelegate {
            }
        }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "idou2" {
-            audioPlayer.stop()
-        }
-    }
     
     override func viewWillAppear(_ animated: Bool) {
            super.viewWillAppear(animated)
